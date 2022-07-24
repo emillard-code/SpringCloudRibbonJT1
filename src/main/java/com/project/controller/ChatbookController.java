@@ -13,16 +13,16 @@ public class ChatbookController {
     @Value("${server.port}")
     private String port;
 
+    @GetMapping("/")
+    public String home() {
+        return "";
+    }
+
     @GetMapping("/chat")
     public String chatNow() {
 
         return "application is up on port : " + port;
 
-    }
-
-    @GetMapping("/")
-    public String refresh() {
-        return "";
     }
 
 }

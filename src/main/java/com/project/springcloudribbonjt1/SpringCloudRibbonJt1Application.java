@@ -19,7 +19,7 @@ public class SpringCloudRibbonJt1Application {
     public String chatNow() {
 
         return "application is up on port : " + port;
-        
+
     }
 
     public static void main(String[] args) {
